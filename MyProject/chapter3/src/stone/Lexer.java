@@ -129,6 +129,8 @@ public class Lexer {
             literal = str;
         }
         public boolean isString() { return true; }
-        public String getText() { return literal; }
+        public String getText() {
+            System.out.println("Len:" + literal.length());
+            return literal; }
     }
 }
